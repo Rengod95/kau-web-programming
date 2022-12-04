@@ -3,6 +3,14 @@ import { NavLink } from "react-router-dom";
 import classes from "./Header.module.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { authActions } from "../../stores/slices/auth-slice";
+import { Avatar, Chip } from "@mui/material";
+import ProfileChip from "./ProfileChip";
+
+export const navSet = [
+  { url: "/gallery", title: "갤러리" },
+  { url: "/community", title: "공지사항" },
+  { url: "/contact", title: "문의" },
+];
 
 const Header = () => {
   const user = useSelector((state) => state.Auth.user);
@@ -21,38 +29,16 @@ const Header = () => {
       </div>
       <div className={classes.nav__container}>
         <ul className={classes.nav_menu}>
-          {user ? (
-            <li>
-              <NavLink
-                to={"/main"}
-                className={classes.link}
-                onClick={logoutHandler}
-              >
-                로그아웃
+          <li key={"/profile"}>
+            <ProfileChip />
+          </li>
+          {navSet.map((nav) => (
+            <li key={nav.url}>
+              <NavLink to={nav.url} className={classes.link}>
+                {nav.title}
               </NavLink>
             </li>
-          ) : (
-            <li>
-              <NavLink to={"/auth"} className={classes.link}>
-                로그인
-              </NavLink>
-            </li>
-          )}
-          <li>
-            <NavLink to={"/gallery"} className={classes.link}>
-              갤러리
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"/community"} className={classes.link}>
-              공지사항
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to={"/contact"} className={classes.link}>
-              문의
-            </NavLink>
-          </li>
+          ))}
         </ul>
       </div>
     </nav>

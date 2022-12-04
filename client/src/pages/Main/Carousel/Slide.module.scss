@@ -1,0 +1,40 @@
+.HeaderLayout{
+  display: grid;
+  grid-template-columns: 6.3fr 3.7fr;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  min-width: 100%;
+  min-height:100%;
+  gap:3.5rem
+}
+
+.Card{
+  display: flex;
+  flex-direction: column;
+  min-width: 420px;
+  padding: 30px;
+  & h1{
+    margin: 0 0 10px 0;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 56px;
+    min-width: 100%;
+  }
+
+  & h2{
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 50px;
+    font-size: 24px;
+    min-width: 100%;
+  }
+}
+
+
+.CardButtonContainer{
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 100%;
+  max-width: 100%;
+  gap:3rem;
+}

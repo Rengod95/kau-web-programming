@@ -14,12 +14,15 @@
   list-style: none;
   box-sizing: border-box;
 }
+*::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
 
 body {
   font-family: "Montserrat", "GmarketSansMedium", sans-serif;
   line-height: 1.7;
   color: #fff;
-  background: #1f2641;
+  background: #242e54;
   width: 100vw;
   height: 100vh;
   user-select: none;
@@ -28,7 +31,6 @@ body {
 
 #root {
   width: 100%;
-  height: 300%;
 }
 
 h1,

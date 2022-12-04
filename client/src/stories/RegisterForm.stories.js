@@ -1,4 +1,4 @@
-import RegisterForm from "../pages/Auth/middle/RegisterForm";
+import RegisterForm from "../pages/Auth/forms/RegisterForm";
 
 export default {
   title: "components/RegisterForm",

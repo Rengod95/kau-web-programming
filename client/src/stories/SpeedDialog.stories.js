@@ -1,4 +1,4 @@
-import SpeedDialCustom from "../UI/SpeedDialCustom";
+import SpeedDialCustom from "../components/UI/SpeedDialCustom";
 
 export default {
   title: "components/UI",

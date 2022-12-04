@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["AuthPage.module.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA;EACA;EACA;EACA","file":"AuthPage.module.css"}
+{"version":3,"sourceRoot":"","sources":["../../styles/Confing.scss","AuthPage.module.scss"],"names":[],"mappings":"AACA;EACE;EACA;EACA;EACA;;ACHF;EACE;EACA;EACA;EACA;EACA;EACA;;;AAIF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA","file":"AuthPage.module.css"}

@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+.formContainer {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  border-right: rgba(255, 255, 255, 0.3) 2px dashed;
+}
+.formContainer h1 {
+  text-align: center;
+}
+
+.form {
+  display: grid;
+  grid-template-rows: 1.5fr 1.5fr 7fr;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  max-height: 500px;
+  padding: 20px 70px;
+}
+
+/*# sourceMappingURL=LoginForm.module.css.map */

@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+.FeedContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  min-width: 720px;
+  max-width: 720px;
+  min-height: auto;
+  padding: 8px 16px 16px 16px;
+  background-color: rgba(33, 27, 72, 0.7);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(11, 4, 127, 0.3) 0px 4px 6px -2px;
+}
+.FeedContainer header {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid rgba(66, 72, 144, 0.4);
+  border-radius: 5px;
+}
+.FeedContainer header .AvatarContainer {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FeedContainer header .TitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 17px;
+  width: 560px;
+  height: 100%;
+}
+.FeedContainer header .TitleContainer span {
+  font-size: 12px;
+  text-align: start;
+  color: rgba(255, 255, 255, 0.7);
+}
+.FeedContainer .TextContainer {
+  display: flex;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 13px;
+  padding: 15px 5px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100px;
+  max-height: 300px;
+  overflow: scroll;
+}
+.FeedContainer .TextContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+.FeedContainer .FeedImage {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 0;
+  max-height: 300px;
+  object-fit: cover;
+}
+.FeedContainer .TagContainer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
+  padding: 30px 0 0 5px;
+  width: 100%;
+  height: 90px;
+}
+.FeedContainer .BottomNavContainer {
+  border-radius: 10px;
+  width: 100%;
+  min-width: 100%;
+  height: 60px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  background-color: rgba(66, 72, 144, 0.3);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.FeedContainer .NavBottonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+  border-left: 1px solid rgba(66, 72, 144, 0.8);
+}
+.FeedContainer .NavBottonContainer:first-child {
+  border-left: none;
+}
+.FeedContainer .NavSpan {
+  padding: 0 5px;
+  font-size: 15px;
+  margin-bottom: 1px;
+}
+.FeedContainer .CommentContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-height: 100px;
+  height: auto;
+  margin-top: 30px;
+  gap: 0.5rem;
+  padding: 10px;
+  border: 1px solid rgba(66, 72, 144, 0.4);
+  border-radius: 5px;
+}
+.FeedContainer .FormContainer {
+  width: 100%;
+  height: 70px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 8.5fr 1.5fr;
+  gap: 1rem;
+}
+.FeedContainer .FormContainer .InputContainer {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-color: red;
+  place-items: center;
+  place-content: center;
+}
+.FeedContainer .FormContainer .ButtonContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+/*# sourceMappingURL=Feed.module.css.map */

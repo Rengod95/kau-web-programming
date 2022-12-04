@@ -12,6 +12,11 @@ export const signUpValidationSchema = yup.object().shape({
     .required("휴대폰 번호는 필수 입력 값 입니다.")
     .moreThan(2, "휴대폰 번호는 최소 2자 이상이어야 합니다."),
 
+  auth_key: yup
+    .number()
+    .typeError("인증키는 는 숫자여야만 합니다.")
+    .required("인증키는 필수 입력 값 입니다."),
+
   password: yup
     .string()
     .required("비밀번호는 필수 입력 값 입니다.")

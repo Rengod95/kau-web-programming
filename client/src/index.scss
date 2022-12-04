@@ -10,6 +10,9 @@
   text-decoration:none;
   list-style: none;
   box-sizing: border-box;
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
+  }
 }
 
 body {
@@ -27,7 +30,6 @@ body {
 
 #root {
   width: 100%;
-  height: 300%;
 }
 
 h1,

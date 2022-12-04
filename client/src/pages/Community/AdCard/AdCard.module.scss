@@ -1,0 +1,53 @@
+
+.Container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height:200px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 15px -3px, rgba(11, 4, 127, 0.6) 0px 4px 6px -2px;
+  background-image: linear-gradient(to right, rgba(66, 57, 188, 0.9) 0%, rgba(50, 38, 97, 0.9) 100%);
+
+
+  .CardLayout{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+  }
+
+  .ImageContainer{
+    display: flex;
+    width: 100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .TextContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .AdTitle{
+    padding: 5px;
+    font-size: 15px;
+    font-weight: normal;
+  }
+
+  .AdDetail{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: end;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+  }
+}

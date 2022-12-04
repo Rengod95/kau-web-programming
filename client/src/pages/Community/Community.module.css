@@ -1,0 +1,118 @@
+.CommunityContainer {
+  min-width: 100vw;
+  min-height: 200vh;
+  max-width: 100vw;
+  padding-top: 70px;
+}
+.CommunityContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.ContainerLayout {
+  display: flex;
+  padding: 40px 60px;
+  width: 100%;
+  min-height: inherit;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 2rem;
+}
+.ContainerLayout::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.Header {
+  width: 1440px;
+  height: 50px;
+  z-index: 5;
+  display: grid;
+  position: fixed;
+  grid-template-columns: 2fr 6fr 2fr;
+  grid-template-rows: 1fr;
+}
+.Header .HeaderLeft {
+  width: 360px;
+  height: 100%;
+}
+.Header .TabContainer {
+  display: flex;
+  width: 720px;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+.Header .HeaderRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 100%;
+}
+
+.MiddleContainer {
+  min-width: 1440px;
+  max-width: 1440px;
+  min-height: inherit;
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: 2fr auto 2fr;
+  grid-template-rows: 1fr;
+}
+.MiddleContainer::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.LeftSide {
+  min-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 360px;
+  max-width: 360px;
+  min-height: 700px;
+  height: auto;
+  background-color: transparent;
+}
+
+.Center {
+  min-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%;
+  width: 720px;
+  max-width: 720px;
+  gap: 3rem;
+}
+.Center::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.RightSide {
+  min-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  position: sticky;
+  top: 200px;
+  left: 40px;
+  gap: 1rem;
+  width: 360px;
+  max-width: 360px;
+  min-height: 700px;
+  max-height: 700px;
+  background-color: transparent;
+}
+.RightSide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+/*# sourceMappingURL=Community.module.css.map */

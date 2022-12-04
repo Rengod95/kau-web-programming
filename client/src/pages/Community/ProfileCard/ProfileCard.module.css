@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+.ProfileContainer {
+  width: 300px;
+  min-height: 470px;
+  max-height: 470px;
+  background-color: rgba(33, 27, 72, 0.8);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(11, 4, 127, 0.3) 0px 4px 6px -2px;
+  position: sticky;
+  top: 200px;
+}
+.ProfileContainer .ImgContainer {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(66, 72, 144);
+}
+.ProfileContainer .DetailContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px;
+  width: 100%;
+  height: 200px;
+  text-align: justify;
+  text-justify: inter-word;
+  gap: 0.3rem;
+  overflow: hidden;
+}
+.ProfileContainer .DetailContainer h3 {
+  font-size: 24px;
+}
+.ProfileContainer .DetailContainer h4 {
+  font-size: 16px;
+}
+.ProfileContainer .DetailContainer span {
+  padding: 10px;
+  font-size: 12px;
+}
+.ProfileContainer .ButtonContainer {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  padding: 20px;
+  gap: 0.7rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+/*# sourceMappingURL=ProfileCard.module.css.map */
