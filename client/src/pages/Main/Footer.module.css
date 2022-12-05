@@ -89,7 +89,7 @@ footer {
 .TableContainer th {
   width: 150px;
   height: 30px;
-  font-size: 28px;
+  font-size: 17px;
   text-align: center;
   font-weight: bolder;
   color: #6c63ff;
@@ -98,7 +98,7 @@ footer {
   width: 150px;
   height: 30px;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.7);
 }

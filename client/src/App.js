@@ -6,6 +6,7 @@ import Gallery from "./pages/Gallery/Gallery";
 import DashBoard from "./pages/DashBoard/DashBoard";
 import Community from "./pages/Community/Community";
 import SpeedDialCustom from "./components/UI/SpeedDialCustom";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path={"/gallery"} element={<Gallery />} />
         <Route path={"/admin"} element={<DashBoard />} />
         <Route path={"/community/*"} element={<Community />} />
+        <Route path={"/contact"} element={<Contact />}></Route>
       </Routes>
     </>
   );

@@ -54,11 +54,16 @@
 }
 
 .bottom{
-  display: flex;
+  display: grid;
+  padding: 70px 150px;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  place-content: center;
   height: 100%;
-  width: 100%;
-  min-height: 770px;
-  max-height: 770px;
+  width: 1440px;
+  gap:1rem;
+  min-height: 870px;
+  max-height: 870px;
 }
 
 .Footer{

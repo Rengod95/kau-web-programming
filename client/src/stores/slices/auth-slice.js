@@ -3,7 +3,7 @@ import registerAction from "../middlewares/registerAction";
 import User from "../../CONSTANTS/models/User";
 import loginAction from "../middlewares/loginAction";
 
-const authInitialState = { user: undefined, toastMessage: undefined };
+const authInitialState = { user: new User(), toastMessage: undefined };
 
 const AuthSlice = createSlice({
   name: "Auth",

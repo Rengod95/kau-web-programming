@@ -14,7 +14,7 @@ const ProfileChip = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    if (!user) {
+    if (!user.name) {
       setLabel(() => "로그인");
       setGoTo(() => "/auth/signIn");
       setColor("#6c63ff");

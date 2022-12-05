@@ -17,7 +17,7 @@ const AuthPage = () => {
   useEffect(() => {
     console.log("어스 이펙트");
     console.log(user);
-    if (user) navigate("/main");
+    if (user.name) navigate("/main");
   }, []);
 
   return (

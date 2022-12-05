@@ -3,8 +3,9 @@ import { NavLink } from "react-router-dom";
 import classes from "./Header.module.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { authActions } from "../../stores/slices/auth-slice";
-import { Avatar, Chip } from "@mui/material";
+import { Avatar, Button, Chip } from "@mui/material";
 import ProfileChip from "./ProfileChip";
+import BoeingLogo from "../../assets/BoeingLogo.png";
 
 export const navSet = [
   { url: "/gallery", title: "갤러리" },
@@ -24,7 +25,7 @@ const Header = () => {
     <nav className={classes.nav}>
       <div className={classes.homeIconContainer}>
         <NavLink to={"/main"}>
-          <h4>보잉보잉</h4>
+          <h4>BOING</h4>
         </NavLink>
       </div>
       <div className={classes.nav__container}>

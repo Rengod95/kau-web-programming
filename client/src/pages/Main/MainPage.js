@@ -3,6 +3,8 @@ import NoticeCarousel from "./Carousel/NoticeCarousel";
 import classes from "./MainPage.module.scss";
 import PresentationContainer from "./ServicePresentation/PresentationContainer";
 import Footer from "./Footer";
+import Calendar from "./Calendar/Calendar";
+import CalendarCard from "./Calendar/CalendarCard";
 
 const MainPage = () => {
   return (
@@ -13,7 +15,10 @@ const MainPage = () => {
       <section className={classes.middle}>
         <PresentationContainer />
       </section>
-      <section className={classes.bottom}></section>
+      <section className={classes.bottom}>
+        <Calendar />
+        <CalendarCard />
+      </section>
       <section className={classes.Footer}>
         <Footer />
       </section>

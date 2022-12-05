@@ -8,12 +8,9 @@ import Comment from "./Comment";
 import CommentOutlinedIcon from "@mui/icons-material/CommentOutlined";
 import FavoriteBorderOutlinedIcon from "@mui/icons-material/FavoriteBorderOutlined";
 import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
-import { FormProvider, useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup/dist/yup";
-import { signInValidationSchema } from "../../../utils/validationSchema";
-import AuthButton from "../../../components/UI/AuthButton";
+
 import AddComment from "./AddComment";
-const Feed = ({ img, type }) => {
+const Feed = ({ img, title, text }) => {
   const [commentIsClicked, setCommentIsClicked] = useState(false);
 
   const commentClickHandler = () => {
@@ -36,7 +33,7 @@ const Feed = ({ img, type }) => {
           />
         </div>
         <div className={classes.TitleContainer}>
-          <h4>Title of the Feed</h4>
+          <h4>{title ? title : "Title of the feed"}</h4>
           <span>10 minutes ago</span>
         </div>
         <div className={classes.AvatarContainer}>
@@ -46,13 +43,9 @@ const Feed = ({ img, type }) => {
         </div>
       </header>
       <section className={classes.TextContainer}>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dolor
-        ducimus illo pariatur voluptatum! Ad assumenda distinctio eos excepturi
-        illo in libero minima nemo odit, officia quasi quidem quis voluptate.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, adipisci
-        consequatur delectus deserunt distinctio dolores eos expedita impedit
-        minima nobis placeat quae qui quidem rem rerum sapiente sequi, similique
-        ullam!Lorem ipsum dolor sit amet,
+        {text
+          ? text
+          : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi aspernatur cumque delectus dolorem et eveniet impedit ipsam itaque molestiae nam nihil nobis, nostrum quia quis recusandae reprehenderit sunt, velit?"}
       </section>
       <img src={img} className={classes.FeedImage} alt={""} />
       <section className={classes.TagContainer}>

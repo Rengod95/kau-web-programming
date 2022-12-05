@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "GmarketSansMedium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+.contact {
+  margin-top: 150px;
+  padding: 50px;
+}
+
+.container {
+  background: #2e3267;
+  padding: 4rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+  height: 30rem;
+  margin: 7rem auto;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 15px -3px, rgba(11, 4, 127, 0.6) 0px 4px 6px -2px;
+}
+
+/* ================ ASIDE ================ */
+.contact__aside {
+  background: #6c63ff;
+  padding: 3rem;
+  border-radius: 1rem;
+  position: relative;
+  bottom: 10rem;
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 15px -3px, rgba(11, 4, 127, 0.6) 0px 4px 6px -2px;
+}
+
+.aside__image {
+  width: 12rem;
+  margin-bottom: 2rem;
+}
+
+.contact__aside h2 {
+  text-align: left;
+  font-size: 36px;
+  margin-bottom: 1rem;
+}
+
+.contact__aside p {
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+.contact__details {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+}
+.contact__details li {
+  display: flex;
+  text-align: start;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-left: 2px solid #00bf8e;
+}
+
+.contact__socials {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 3rem;
+}
+.contact__socials li {
+  border-left: 2px solid #00bf8e;
+}
+
+.contact__socials a {
+  background: #424890;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 0.9rem;
+  transition: all 400ms ease;
+}
+
+.contact__socials a:hover {
+  background: transparent;
+}
+
+/* ================ FORM ================ */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-right: 4rem;
+}
+
+.form__name {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.contact__form input[type=text] {
+  width: 50%;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 1rem;
+  background: #242e54;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.contact__form.btn {
+  width: max-content;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=contact.css.map */

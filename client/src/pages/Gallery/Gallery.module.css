@@ -1,0 +1,34 @@
+.Container {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.Container .Layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 70px;
+  width: 100%;
+  height: auto;
+  gap: 2rem;
+}
+.Container .Layout h2 {
+  font-size: 46px;
+  font-weight: bolder;
+  display: flex;
+  width: 100%;
+  height: 70px;
+  padding-left: 80px;
+}
+.Container .Layout .ImageContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 2rem;
+}
+
+/*# sourceMappingURL=Gallery.module.css.map */

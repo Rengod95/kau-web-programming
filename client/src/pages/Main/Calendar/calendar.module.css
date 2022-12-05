@@ -1,0 +1,81 @@
+button {
+  cursor: pointer;
+}
+
+.container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 650px;
+  height: 600px;
+  padding: 45px;
+  border-radius: 15px;
+  background-image: linear-gradient(to right, rgba(69, 44, 146, 0.9) 0%, rgba(50, 44, 130, 0.9) 100%);
+  box-shadow: rgba(0, 0, 0, 0.6) 0px 10px 15px -3px, rgba(11, 4, 127, 0.6) 0px 4px 6px -2px;
+}
+
+.title {
+  display: flex;
+  margin-bottom: 30px;
+  background-color: transparent;
+}
+.title select {
+  border: none;
+  margin-left: 5px;
+  font-size: 28px;
+  color: #fff;
+  height: 30px;
+  align-self: center;
+  background: none;
+}
+
+.pagination {
+  margin-left: auto;
+  align-self: center;
+}
+.pagination button {
+  color: #00bf8e;
+  margin: 0 10px;
+  border: none;
+  background: none;
+}
+
+.week {
+  display: flex;
+  width: 100%;
+}
+.week .weekday {
+  width: 14.2857142857%;
+  text-align: center;
+}
+.week .sunday {
+  color: red;
+}
+.week .saturday {
+  color: blue;
+}
+
+.date {
+  margin-top: 20px;
+}
+.date .weekday {
+  width: 14.2857142857%;
+  float: left;
+  text-align: center;
+  height: 78.5714285714px;
+  line-height: 50px;
+}
+.date .sunday {
+  color: red;
+}
+.date .saturday {
+  color: blue;
+}
+.date .today {
+  background-color: #6c63ff;
+  color: white;
+  font-weight: 700;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=calendar.module.css.map */

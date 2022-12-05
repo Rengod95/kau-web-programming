@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import classes from "./SideCard.module.scss";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import AuthButton from "../../../components/UI/AuthButton";
 
 const SIGNUP = "/auth/signUp";
@@ -11,6 +11,13 @@ const SideCard = () => {
 
   const location = useLocation();
   const path = location.pathname;
+  const navigate = useNavigate();
+  const goSignUpHandler = () => {
+    navigate("/auth/signUp");
+  };
+  const goSignInHandler = () => {
+    navigate("/auth/signIn");
+  };
 
   useEffect(() => {
     if (location.pathname === SIGNUP) {
@@ -32,7 +39,13 @@ const SideCard = () => {
       <h1>{title}</h1>
       <h2>{description}</h2>
       <div>
-        <AuthButton disabled={false} size={{ width: 100, height: 35 }}>
+        <AuthButton
+          disabled={false}
+          size={{ width: 100, height: 35 }}
+          onClick={
+            location.pathname === SIGNUP ? goSignInHandler : goSignUpHandler
+          }
+        >
           {title}
         </AuthButton>
       </div>
